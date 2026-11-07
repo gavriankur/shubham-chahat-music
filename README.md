@@ -61,3 +61,12 @@ Serve this folder with any static HTTP server at `http://127.0.0.1:8000/`. Add t
 - https://developer.spotify.com/documentation/web-api/concepts/quota-modes
 - https://developer.spotify.com/policy
 - https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages
+
+
+## Live console
+
+Search Spotify by song/artist or paste a full Spotify track link. Each result has Play now and Add to queue. Play now immediately starts that recording; Add to queue appends it after songs already queued. Spotify does not expose insertion, removal or queue reordering through this API. The upcoming list displays up to 20 songs from the active Spotify queue and refreshes periodically or when requested.
+
+The seek bar, Start, and ten-second jumps work on the current track. Pause for announcement pauses Spotify; Resume music continues on the same device and song. No microphone is captured or amplified by this page. Space toggles play/pause and N skips, unless focus is in a form or button.
+
+The six source files include console.js; upload it alongside app.js, index.html, style.css, README.md and .nojekyll. Live search, queue access and playback still require an authorized Spotify Premium account and Spotify developer access. Restrictions and rate limits are shown in the interface.
